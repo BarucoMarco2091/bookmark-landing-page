@@ -1,0 +1,50 @@
+@import '../styles/footer.scss';
+@import '../styles/header.scss';
+@import '../styles/main.scss';
+@import '../styles/responsivity.scss';
+@import '../styles/styles.scss';
+@import '../styles/variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    height: 100dvh;
+    width: 100%;
+}
+
+body {
+    height: 100dvh;
+    width: 100%;
+    outline: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+svg {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+p {
+    font-size: 1rem;
+}
