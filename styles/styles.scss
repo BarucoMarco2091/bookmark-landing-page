@@ -2,7 +2,6 @@
 @import '../styles/header.scss';
 @import '../styles/main.scss';
 @import '../styles/responsivity.scss';
-@import '../styles/styles.scss';
 @import '../styles/variables.scss';
 
 * {
@@ -13,7 +12,6 @@
 }
 
 header {
-    height: 100dvh;
     width: 100%;
 }
 
@@ -23,6 +21,7 @@ body {
     outline: 0;
     position: relative;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 img {

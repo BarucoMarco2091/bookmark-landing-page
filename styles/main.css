@@ -1,1 +1,80 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.container {
+  display: flex;
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 7dvh;
+  padding-top: 5dvh;
+}
+.container div {
+  flex: 1;
+}
+.container .container-text {
+  display: flex;
+  flex-direction: column;
+}
+.container .container-text h1 {
+  font-size: 2.5rem;
+  color: hsl(229, 31%, 21%);
+  margin-bottom: 5dvh;
+}
+.container .container-text p {
+  color: hsl(229, 8%, 60%);
+}
+.container .container-text .container-button {
+  margin-top: 5dvh;
+}
+.container .container-text .container-button button {
+  height: 5dvh;
+  width: 20dvh;
+  background-color: transparent;
+  color: hsl(229, 8%, 60%);
+  border: solid 1px hsl(229, 31%, 21%);
+  border-radius: 1dvh;
+}
+.container .container-text .container-button .chrome-btn {
+  margin-right: 2dvh;
+  transition: border 0.7s;
+  transition: color 0.7s;
+}
+.container .container-text .container-button .chrome-btn:hover {
+  border: solid 1px hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+}
+
+.second-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1240px;
+  margin: auto;
+}
+.second-container .bookmark-btn, .second-container .speedy-btn, .second-container .easy-btn {
+  border: none;
+  margin-right: 3dvh;
+  color: hsl(229, 8%, 60%);
+  background-color: transparent;
+}
+.second-container .bookmark-btn:hover {
+  color: hsl(0, 94%, 66%);
+  border-bottom: solid 1.5px hsl(0, 94%, 66%);
+}
+.second-container .speedy-btn:hover {
+  color: hsl(0, 94%, 66%);
+  border-bottom: solid 1.5px hsl(0, 94%, 66%);
+}
+.second-container .easy-btn:hover {
+  color: hsl(0, 94%, 66%);
+  border-bottom: solid 1.5px hsl(0, 94%, 66%);
+}
+
+.content, .new-bookmark, .new-speedy, .new-easy {
+  display: flex;
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 5dvh;
+}
+.content div, .new-bookmark div, .new-speedy div, .new-easy div {
+  flex: 1;
+  gap: 3dvh;
+}/*# sourceMappingURL=main.css.map */

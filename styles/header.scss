@@ -1,0 +1,49 @@
+@import '../styles/variables.scss';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding-top: 3dvh;
+
+    .header-links {
+        display: flex;
+        flex-direction: row;
+        gap: 2dvh;
+
+        ul {
+            display: flex;
+            gap: 4dvh;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: $veryDarkBlue;
+                    transition: color 0.9s;
+                }
+
+                a:hover {
+                    color: $softRed;
+                }
+            }
+        }
+
+        button {
+            border: 1px solid $softRed;
+            border-radius: 1dvh;
+            background-color: $softRed;
+            height: 5dvh;
+            width: 15dvh;
+            transition: border 0.6s;
+            color: white;
+        }
+
+        button:hover {
+            background-color: transparent;
+            border: 1px solid $softRed;
+            color: $softRed;
+        }
+    }
+}

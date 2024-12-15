@@ -1,0 +1,94 @@
+@import '../styles/variables.scss';
+
+.container {
+    display: flex;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 7dvh;
+    padding-top: 5dvh;
+
+    div {
+        flex: 1;
+    }
+
+    .container-text {
+        display: flex;
+        flex-direction: column;
+        
+        h1 {
+            font-size: 2.5rem;
+            color: $veryDarkBlue;
+            margin-bottom: 5dvh;
+        }
+
+        p {
+            color: $grayishBlue;
+        }
+
+        .container-button {
+            margin-top: 5dvh;
+
+            button {
+                height: 5dvh;
+                width: 20dvh;
+                background-color: transparent;
+                color: $grayishBlue;
+                border: solid 1px $veryDarkBlue;
+                border-radius: 1dvh;
+            }
+            
+            .chrome-btn {
+                margin-right: 2dvh;
+                transition: border 0.7s;
+                transition: color 0.7s;
+            }
+
+            .chrome-btn:hover {
+                border: solid 1px $softBlue;
+                color: $softBlue;
+            }
+        }
+    }
+}
+
+.second-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1240px;
+    margin: auto;
+
+    .bookmark-btn, .speedy-btn, .easy-btn {
+        border: none;
+        margin-right: 3dvh;
+        color: $grayishBlue;
+        background-color: transparent;
+    }
+
+    .bookmark-btn:hover {
+        color: $softRed;
+        border-bottom: solid 1.5px $softRed;
+    }
+
+    .speedy-btn:hover {
+        color: $softRed;
+        border-bottom: solid 1.5px $softRed;
+    }
+
+    .easy-btn:hover {
+        color: $softRed;
+        border-bottom: solid 1.5px $softRed;
+    }
+}
+
+.content, .new-bookmark, .new-speedy, .new-easy {
+    display: flex;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 5dvh;
+
+    div {
+        flex: 1;
+        gap: 3dvh;
+    }
+}

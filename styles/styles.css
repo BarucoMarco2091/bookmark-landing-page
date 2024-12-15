@@ -1,4 +1,102 @@
-@i @import "../styles/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  padding-top: 3dvh;
+}
+nav .header-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2dvh;
+}
+nav .header-links ul {
+  display: flex;
+  gap: 4dvh;
+}
+nav .header-links ul li {
+  list-style: none;
+}
+nav .header-links ul li a {
+  color: hsl(229, 31%, 21%);
+  transition: color 0.9s;
+}
+nav .header-links ul li a:hover {
+  color: hsl(0, 94%, 66%);
+}
+nav .header-links button {
+  border: 1px solid hsl(0, 94%, 66%);
+  border-radius: 1dvh;
+  background-color: hsl(0, 94%, 66%);
+  height: 5dvh;
+  width: 15dvh;
+  transition: border 0.6s;
+  color: white;
+}
+nav .header-links button:hover {
+  background-color: transparent;
+  border: 1px solid hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+}
+
+.container {
+  display: flex;
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 7dvh;
+  padding-top: 5dvh;
+}
+.container div {
+  flex: 1;
+}
+.container .container-text {
+  display: flex;
+  flex-direction: column;
+}
+.container .container-text h1 {
+  font-size: 2.5rem;
+  color: hsl(229, 31%, 21%);
+  margin-bottom: 5dvh;
+}
+.container .container-text p {
+  color: hsl(229, 8%, 60%);
+}
+.container .container-text .container-button {
+  margin-top: 5dvh;
+}
+.container .container-text .container-button button {
+  height: 5dvh;
+  width: 20dvh;
+  background-color: transparent;
+  color: hsl(229, 8%, 60%);
+  border: solid 1px hsl(229, 31%, 21%);
+  border-radius: 1dvh;
+}
+.container .container-text .container-button .chrome-btn {
+  margin-right: 2dvh;
+  transition: border 0.7s;
+  transition: color 0.7s;
+}
+.container .container-text .container-button .chrome-btn:hover {
+  border: solid 1px hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+}
+
+.second-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1240px;
+  margin: auto;
+}
+
+.content, .new-easy {
+  display: flex;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +105,6 @@
 }
 
 header {
-  height: 100dvh;
   width: 100%;
 }
 
@@ -17,6 +114,7 @@ body {
   outline: 0;
   position: relative;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
